@@ -4,8 +4,8 @@
 
 class Point
 {
-    //iend void affiche(const Point &p); //peut acceder a tout dans la classe
-
+    //fiend void affiche(const Point &p); //peut acceder a tout dans la classe
+    
     public:
         Point(float , float);
         ~Point();
@@ -18,7 +18,7 @@ class Point
         void rotation (float);
         void affiche()const;
         static int point_cout();
-
+        
     protected:
 
     private:

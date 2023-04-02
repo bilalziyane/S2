@@ -2,6 +2,8 @@
 #include <cstdio>
 #include <cstring>
 
+
+
 Charset::Charset()
 {
     for (int i = 0; i < 256; i++)
@@ -46,5 +48,10 @@ int main()
     char s[256];
     printf("enter your name :");
     scanf("%s", s);
-    printf("%d",nombre(s));
+
+    int Point::point_cout()
+    {
+        return 0;
+    }
+    printf("%d", nombre(s));
 }
