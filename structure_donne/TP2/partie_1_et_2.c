@@ -31,7 +31,7 @@ int main()
     afficher_pile(p);
 
     PILE pile_inverse = inverser_pile(p);
-    printf("Pile inversée:\n");
+    printf("Pile inverse:\n");
     afficher_pile(&pile_inverse);
 
     PILE p_copy = copier_pile(p);

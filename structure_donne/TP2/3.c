@@ -62,10 +62,10 @@ int main()
     }
 
     if (est_vide(p) && est_equilibree) {
-        printf("La chaine de parenthèses est équilibrée.\n");
+        printf("La chaine de parentheses est equilibre.\n");
     }
     else {
-        printf("La chaine de parenthèses n'est pas équilibrée.\n");
+        printf("La chaine de parentheses n'est pas equilibre.\n");
     }
 
     free(p);
