@@ -2,7 +2,7 @@
 #include <cstdio>
 int Point::point_cnt =0;//static global est =0 par defaut .
 int Point::point_cout
-{
+{   
     return point_cnt;
 }
 Point::Point(float x, float y)

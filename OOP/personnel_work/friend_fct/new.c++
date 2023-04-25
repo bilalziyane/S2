@@ -20,7 +20,6 @@ class cost;
 
 class revenue
 {
-    friend bool profit(revenue &,cost &);
     int revenu;
     public :
     // revenue(int rev) : revenu(rev) {}
@@ -28,16 +27,17 @@ class revenue
     {
         revenu=rev;
     }
+    bool profit(cost &);
 };
 class cost
 {
-    friend bool profit(revenue &,cost &);
+    friend bool revenue::profit(cost &);
     int coste;
     public:
     cost(int cos) : coste(cos) {}
 };
-bool profit(revenue &re,cost &cos){
-    if (re.revenu > cos.coste) return 1;
+bool revenue::profit(cost &cos){
+    if (revenu > cos.coste) return 1;
     else 
         return 0;
 
@@ -59,7 +59,7 @@ int  main()
     myobject.print();
     revenue revenue1(7000);
     cost cost1(5000);
-    if(profit(revenue1,cost1))
+    if(revenue1.profit(cost1))
         printf("hey");
     else printf("no hey");
     
